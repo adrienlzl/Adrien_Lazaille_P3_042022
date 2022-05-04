@@ -1,0 +1,245 @@
+.check {
+  display: none;
+
+
+  .icone_check {
+    color: $color-tertiary;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  background-color: $color-verylightgrey;
+  border-radius: 50px;
+  position: absolute;
+  padding: 35px;
+  top: 177px;
+  left: 0;
+  width: 100%;
+  @include laptop {
+    padding: 40px;
+  }
+
+  h2 {
+    height: 20px;
+    font-size: 25px;
+    position: absolute;
+    left: 20px;
+  }
+}
+
+.starter {
+  background-color: $color-verylightgrey;
+  padding: 50px 20px 10px 20px;
+
+  @include laptop {
+    padding: 30px 20px 10px 20px;
+  }
+
+
+  ul {
+    display: grid;
+    grid-template-rows: repeat(4, 80px);
+    grid-gap: 15px;
+
+
+    li {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 9px silver;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.starter3 {
+  background-color: $color-verylightgrey;
+  padding: 50px 20px 10px 20px;
+
+  @include laptop {
+    padding: 30px 20px 10px 20px;
+  }
+
+
+  ul {
+    display: grid;
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 15px;
+
+
+    li {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 2px 9px silver;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.dessert, .dish, {
+  background-color: $color-verylightgrey;
+  padding: 30px 20px 10px 20px;
+
+
+  ul {
+    display: grid;
+    grid-template-rows: repeat(3, 80px);
+    grid-gap: 15px;
+  }
+
+  li {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 9px silver;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 90% 10%;
+  grid-template-areas:
+        "name ."
+        "legend price";
+
+  &:hover {
+    width: calc(100% - 80px);
+    cursor: pointer;
+  }
+}
+
+.card:hover ~ .check {
+  display: flex;
+  background-color: $color-tertiary;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+  border-radius: 0 15px 15px 0;
+
+}
+
+.name {
+  grid-area: name;
+  place-self: center stretch;
+  font-weight: bold;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.legend {
+  grid-area: legend;
+  place-self: center stretch;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.price {
+  grid-area: price;
+  place-self: center;
+  font-weight: bold;
+}
+
+.button {
+  background-color: $color-verylightgrey;
+  height: 100px;
+  text-align: center;
+
+  a {
+    width: 100px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: linear-gradient(165deg, $color-secondary, $color-primary);
+    padding: 15px 60px;
+    box-shadow: 0 3px 8px $color-grey;
+    margin-top: 10px;
+    color: white;
+
+    &:hover {
+      background: linear-gradient(180deg, $color-secondarylighter, $color-primarylighter);
+      box-shadow: 0 4px 17px $color-grey;
+      transition-duration: 10s;
+    }
+  }
+}
+
+.dessert {
+  padding-bottom: 65px;
+
+}
+
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 220px;
+}
+
+h3 {
+  color: black;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 300;
+
+}
+
+h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  background: #99e2d0;
+  height: 2px;
+}
+
+.dish, .dessert, .starter {
+  li {
+    @include laptop {
+      width: 100%
+    }
+  }
+}
+
+#main_section {
+  @include laptop {
+    background-color: $color-verylightgrey;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: 470px 150px;
+    grid-template-areas:
+              "starter dish dessert"
+              ". btn .";
+    .starter {
+      padding: 30px 20px 10px 20px;
+    }
+    .button {
+      grid-area: btn;
+    }
+  }
+}
+
+
+
+

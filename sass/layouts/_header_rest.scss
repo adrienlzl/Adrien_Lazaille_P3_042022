@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  position: relative;
+
+  .title01 {
+    color: #000;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 13px;
+    box-shadow: 0 1px 10px silver;
+  }
+
+  .arrow {
+    position: absolute;
+    left: 30px;
+    top: 11px;
+  }
+}
