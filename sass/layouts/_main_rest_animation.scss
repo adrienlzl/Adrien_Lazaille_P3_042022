@@ -16,13 +16,12 @@
 
 .card:hover {
   transition: 1s;
-  animation: card 1s;
+  animation: card 1s ease-in;
 }
 
 .card:hover ~ .check > .icone_check {
   transition: 1s;
   animation: rotate 1s;
-
 }
 
 .card:hover ~ .check {

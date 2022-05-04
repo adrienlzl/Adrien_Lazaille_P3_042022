@@ -27,11 +27,11 @@
 @keyframes appearance03 {
   0% {
     opacity: 0;
-    transform: translateY(+40px);
+    transform: translateY(40px);
   }
   50% {
     opacity: 0;
-    transform: translateY(+40px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
@@ -41,11 +41,11 @@
 
 @keyframes check {
   0% {
-    transform: translateX(1px);
-    width: 0px;
+    width: 0;
+    opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    opacity: 1;
     width: 80px;
   }
 }
