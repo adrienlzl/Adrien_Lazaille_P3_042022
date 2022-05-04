@@ -8,10 +8,11 @@
   font-size: 23px;
   top: 24px;
   z-index: 500;
+  cursor: pointer;
 
   &:hover ~ .heart02 {
     font-weight: bold;
-    animation: heart 2s;
+    animation: heart 500ms ease-in;
     animation-fill-mode: forwards;
     -webkit-background-clip: text;
     color: transparent;
@@ -28,6 +29,7 @@
   font-size: 23px;
   top: 24px;
   z-index: -1;
+  cursor: pointer;
 
   &:hover {
     font-weight: bold;

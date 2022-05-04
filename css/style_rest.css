@@ -397,10 +397,11 @@ h3::after {
   font-size: 23px;
   top: 24px;
   z-index: 500;
+  cursor: pointer;
 }
 .heart:hover ~ .heart02 {
   font-weight: bold;
-  animation: heart 2s;
+  animation: heart 500ms ease-in;
   animation-fill-mode: forwards;
   -webkit-background-clip: text;
   color: transparent;
@@ -416,6 +417,7 @@ h3::after {
   font-size: 23px;
   top: 24px;
   z-index: -1;
+  cursor: pointer;
 }
 .heart02:hover {
   font-weight: bold;
