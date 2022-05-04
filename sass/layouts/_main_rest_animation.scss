@@ -1,0 +1,31 @@
+.li_starter {
+  transition: 2s;
+  animation: appearance01 1s;
+}
+
+.li_dish {
+  transition: 4s;
+  animation: appearance02 2s;
+
+}
+
+.li_dessert {
+  transition: 6s;
+  animation: appearance03 3s;
+}
+
+.card:hover {
+  transition: 1s;
+  animation: card 1s;
+}
+
+.card:hover ~ .check > .icone_check {
+  transition: 1s;
+  animation: rotate 1s;
+
+}
+
+.card:hover ~ .check {
+  transition: 1s;
+  animation: check 1s;
+}

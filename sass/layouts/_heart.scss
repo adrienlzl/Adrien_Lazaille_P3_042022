@@ -1,0 +1,77 @@
+
+.heart {
+  display: inline-block;
+  font-weight: 100;
+  color: black;
+  position: absolute;
+  right: 30px;
+  font-size: 23px;
+  top: 24px;
+  z-index: 500;
+
+  &:hover ~ .heart02 {
+    font-weight: bold;
+    animation: heart 2s;
+    animation-fill-mode: forwards;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, $color-secondary, $color-primary);
+  }
+}
+
+.heart02 {
+  display: inline-block;
+  font-weight: 100;
+  color: black;
+  position: absolute;
+  right: 30px;
+  font-size: 23px;
+  top: 24px;
+  z-index: -1;
+
+  &:hover {
+    font-weight: bold;
+    animation: heart 1s;
+    animation-fill-mode: forwards;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, $color-secondary, $color-primary);
+
+  }
+}
+
+i.heart, i.heart02, i.heart_rest, i.heart_rest02 {
+  font-weight: 100;
+}
+
+.heart_rest, .heart_rest02 {
+  font-size: 20px;
+  color: black;
+  position: absolute;
+  top: 48px;
+  right: 31px;
+}
+
+.heart_rest {
+  z-index: 500;
+
+  &:hover ~ .heart_rest02 {
+    font-weight: bold;
+    animation: heart 2s;
+    animation-fill-mode: forwards;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(180deg, $color-secondary, $color-primary);
+  }
+}
+.heart_rest02 {
+  z-index: -2;
+  &:hover{
+  font-weight: bold;
+  animation: heart 2s;
+  animation-fill-mode: forwards;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(180deg, $color-secondary, $color-primary);
+  }
+}
