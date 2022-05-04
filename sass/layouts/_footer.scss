@@ -1,0 +1,27 @@
+#footer {
+  background-color: $color-footer;
+  padding: 20px;
+  margin-bottom: 30px;
+
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+}
+
+.footer_icone {
+  width: 25px;
+}

@@ -1,0 +1,44 @@
+.reservation {
+  background-color: $color-verylightgrey;
+  min-height: 250px;
+  display: grid;
+  grid-template-rows: 130px 50px 130px;
+  color: $color-grey;
+
+  p {
+    place-self: center;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 19px;
+    color: black;
+    font-weight: 300;
+  }
+
+  .pink_b {
+    place-self: center;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background: linear-gradient(180deg, $color-secondary, $color-primary);
+    padding: 15px;
+    box-shadow: 0 3px 8px $color-grey;
+
+
+    &:hover {
+      background: linear-gradient(180deg, $color-secondarylighter, $color-primarylighter);
+      box-shadow: 0 4px 17px $color-grey;
+      transition-duration: 10s;
+    }
+  }
+
+  h2 {
+    color: black;
+    place-self: center;
+    text-align: center;
+    padding: 0 50px;
+    font-size: 25px;
+  }
+}
+
+

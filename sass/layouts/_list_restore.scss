@@ -1,0 +1,100 @@
+.list_restore {
+  padding: 40px 15px 50px 15px;
+  background-color: $color-verylightgrey;
+  display: grid;
+  grid-template-rows: 50px 300px 300px 300px 300px;
+  grid-gap: 10px;
+
+
+  @include tablett {
+    height: 800px;
+    place-self: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+          "h2 h2"
+          "card01 card02"
+          "card03 card04";
+    .item1 {
+      grid-area: card01;
+    }
+    .item2 {
+      grid-area: card02;
+    }
+    .item3 {
+      grid-area: card03;
+    }
+    .item4 {
+      grid-area: card04;
+    }
+  }
+  @include laptop {
+    height: 500px;
+    place-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+          "h2 h2 h2 h2"
+          "card01 card02 card03 card04";
+    .item1 {
+      grid-area: card01;
+    }
+    .item2 {
+      grid-area: card02;
+    }
+    .item3 {
+      grid-area: card03;
+    }
+    .item4 {
+      grid-area: card04;
+    }
+  }
+}
+
+figcaption {
+  height: 75px;
+  position: relative;
+  padding: 10px;
+}
+
+h2 {
+  padding-left: 7px;
+  place-self: normal;
+}
+
+figure {
+  background-color: white;
+  margin: 0 5px 0;
+  border-radius: 15px;
+  box-shadow: 0 3px 5px $color-lightgrey;
+
+  img {
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    height: 220px;
+  }
+  h3, p {
+    color: black;
+    font-size: 18px;
+  }
+}
+
+
+
+#spinner {
+  animation: spin 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}
+
+#background_spinner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  animation: backgroundspin 3s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.1s;
+}

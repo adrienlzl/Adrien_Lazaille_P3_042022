@@ -1,0 +1,99 @@
+.function {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+
+
+  h2 {
+    margin-bottom: 20px;
+
+  }
+
+  ol {
+    display: grid;
+    grid-template-rows: repeat(3, 60px);
+    grid-gap: 20px;
+    font-weight: 600;
+    @include laptop {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  li {
+    position: relative;
+    background-color: $color-verylightgrey;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0 4px 9px #dddddd;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+
+    @include tablett {
+      min-width: 300px;
+      place-self: center;
+    }
+
+  }
+
+  li:first-child:before {
+    display: block;
+    background-color: $color-primary;
+    content: "1";
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, 75%);
+    color: white;
+  }
+
+  li:nth-child(2):before {
+    display: block;
+    background-color: $color-primary;
+    content: "2";
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, 75%);
+    color: white;
+  }
+
+  li:nth-child(3):before {
+    display: block;
+    background-color: $color-primary;
+    content: "3";
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, 75%);
+    color: white;
+  }
+
+  i {
+    width: 50px;
+  }
+
+  .font_function {
+    color: $color-grey;
+    margin-left: 15px;
+  }
+
+  #taste {
+    background-color: $color-lightpink;
+  }
+}
+
+#taste .taste03 {
+  color: $color-primary;
+}
